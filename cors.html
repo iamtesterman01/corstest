@@ -11,8 +11,8 @@
                 var SuspectUrl = document.getElementById("suspecturl").value;
                 var params = document.getElementById("param").value;
                 var xhttp = new XMLHttpRequest();
-                xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
                 xhttp.open("POST", SuspectUrl, true);
+                xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
                 xhttp.send(params);
             }
         </script>

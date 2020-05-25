@@ -12,6 +12,7 @@
                 var params = document.getElementById("param").value;
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", SuspectUrl, true);
+                xhttp.withCredentials = true;
                 xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=UTF-8');
                 xhttp.send(params);
             }
